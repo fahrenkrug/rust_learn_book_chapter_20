@@ -45,7 +45,6 @@ const HOME: Route = Route{
 const HELLO2: Route = Route{
     method: "GET",
     path: "/hellos/2",
-    // filename: String::from("hello2.html"),
     status: 200
 };
 
@@ -63,8 +62,6 @@ fn main() {
         pool.execute(|| {
             handle_connection(stream)
         });
-        // println!("Connection established");
-        // handle_connection(stream, &ROUTES);
     }
     println!("Shutting down");
 }
